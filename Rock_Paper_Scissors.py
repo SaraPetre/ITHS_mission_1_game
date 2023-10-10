@@ -13,6 +13,7 @@ def get_user_choice():
     choice = input(str("\nEnter your choice (rock/paper/scissors): "))
     return choice
 
+
 def get_computer_choice():
     return random.choice(["rock", "paper", "scissors"])
 
@@ -56,8 +57,8 @@ def main():
         if play_again != "y":
             break
 
-os.system('clear') #Clearing the Screen
+
+os.system('clear')  # Clearing the Screen
 
 if __name__ == "__main__":
     main()
-

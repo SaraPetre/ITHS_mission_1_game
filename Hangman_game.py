@@ -9,6 +9,7 @@ def read_name_list(filename):
 def choose_word(word_list):
     return random.choice(word_list)
 
+
 def display_word(word, guessed_letters):
     display = ""
     for letter in word:
@@ -17,6 +18,7 @@ def display_word(word, guessed_letters):
         else:
             display += "_"
     return display
+
 
 def hangman():
     max_attempts = 6
@@ -55,5 +57,7 @@ def hangman():
             print("You've run out of attempts. The word was: " + word_to_guess)
             break
 
+
 if __name__ == "__main__":
+
     hangman()
